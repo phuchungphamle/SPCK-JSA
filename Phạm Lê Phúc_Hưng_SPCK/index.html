@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BVInStagram</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column">
+        <div class="logo"><img src="image/logo/BVInStagram main logo v1.1.png" alt=""></div>
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-compass"></i><span>Explore</span></a>
+        <a href="chat.html" class="nav-link"><i class="fa-solid fa-message"></i><span>Messages</span></a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+        <a href="#" class="nav-link create-link">
+            <i class="fa-solid fa-square-plus"></i><span>Create</span>
+            <div class="popup-modal">
+                <div class="popup-content">
+                    <h2>Create new post</h2>
+                    <div class="upload-box">
+                        📷🎥<br>Drag photos and videos here
+                    </div>
+                    <button class="btn-select">Select from computer</button>
+                </div>
+            </div>
+        </a>
+        <a href="profile.html" class="nav-link"><i class="fa-solid fa-id-card"></i><span>Profile</span></a>
+        <a href="#" class="nav-link mt-auto"><i class="fa-solid fa-bars"></i><span>More</span></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content flex-grow-1">
+        <div class="row main-section">
+            <!-- Scrollable Post Feed -->
+            <div class="col-lg-8 scrollable-feed">
+                <!-- top carousel -->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner top-carousel">
+                        <div class="carousel-item active top-item">
+                            <img src="image/content/top_1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item top-item">
+                            <img src="image/content/top_2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item top-item">
+                            <img src="image/content/top_3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Carousel arrows ON TOP of the image -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="feed-scroll">
+                    <!-- Postcard 1 -->
+                    <div class="postcard">
+                        <img src="image/content/mookie betts.jpg" alt="Mookie Betts" />
+                        <div class="reaction-bar">
+                            <div class="left-icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="like-count">109,684 likes</div>
+                        <div class="info">Mookie Betts</div>
+                    </div>
+
+                    <!-- Postcard 2 -->
+                    <div class="postcard">
+                        <img src="image/content/freddie freeman.jpg" alt="Freddie Freeman" />
+                        <div class="reaction-bar">
+                            <div class="left-icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="like-count">87,431 likes</div>
+                        <div class="info">Freddie Freeman</div>
+                    </div>
+
+                    <!-- Postcard 3 -->
+                    <div class="postcard">
+                        <img src="image/content/shohei ohtani.jpg" alt="Shohei Ohtani" />
+                        <div class="reaction-bar">
+                            <div class="left-icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="right-icon">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="like-count">205,777 likes</div>
+                        <div class="info">Shohei Ohtani</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixed Sidebar with Friends + Carousel -->
+            <div class="col-lg-4 fixed-sidebar">
+                <!-- Friend Suggestions -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Friend Suggestions</h5>
+                        <ul class="list-group_list-group-flush">
+                            <img src="image/content/person_3.png" alt="" class="icon">
+                            <li class="list-group-item">John Doe</li>
+                            <img src="image/content/person_2.png" alt="" class="icon">
+                            <li class="list-group-item">Jane Smith</li>
+                            <img src="image/content/person_1.png" alt="" class="icon">
+                            <li class="list-group-item">Alex Johnson</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/content/person_1.png" class="d-block w-100" alt="Alex Johnson">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/content/person_2.png" class="d-block w-100" alt="Jane Smith">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/content/person_3.png" class="d-block w-100" alt="John Doe">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+        <p>Contact | Terms | Social Media</p>
+        <div class="d-flex justify-content-center gap-3 mb-2">
+            <a href="#" class="text-primary"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-primary"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+        <p class="footer-copyright">copyright by Phuc Hung @2025</p>
+    </footer>
+
+    <!-- Bootstrap cdn script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

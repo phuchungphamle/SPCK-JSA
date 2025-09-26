@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BVInStagram - Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar d-flex flex-column">
+    <div class="logo"><img src="image/logo/logo.png" alt=""></div>
+    <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+    <a href="#" class="nav-link"><i class="fa-solid fa-compass"></i><span>Explore</span></a>
+    <a href="chat.html" class="nav-link"><i class="fa-solid fa-message"></i><span>Messages</span></a>
+    <a href="#" class="nav-link"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+    <a href="#" class="nav-link create-link">
+      <i class="fa-solid fa-square-plus"></i><span>Create</span>
+      <div class="popup-modal">
+        <div class="popup-content">
+          <h2>Create new post</h2>
+          <div class="upload-box">
+            📷🎥<br>Drag photos and videos here
+          </div>
+          <button class="btn-select">Select from computer</button>
+        </div>
+      </div>
+    </a>
+    <a href="profile.html" class="nav-link"><i class="fa-solid fa-id-card"></i><span>Profile</span></a>
+    <a href="#" class="nav-link mt-auto"><i class="fa-solid fa-bars"></i><span>More</span></a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="row main-section">
+      <!-- Left: Profile -->
+      <div class="col-lg-8">
+        <div class="profile-header">
+          <img src="image/content/profile_pic.png" alt="Phuc Hung" class="profile-img">
+          <div class="profile-info">
+            <h2>phuc.hung2012</h2>
+            <div class="btn-group">
+              <button class="btn btn-outline-secondary btn-sm">Edit Profile</button>
+              <button class="btn btn-outline-secondary btn-sm">View Archive</button>
+              <button class="btn btn-outline-secondary btn-sm"><i class="fa fa-gear"></i></button>
+            </div>
+            <div class="profile-stats">
+              <div><b>0</b> posts</div>
+              <div><b>0</b> followers</div>
+              <div><b>0</b> following</div>
+            </div>
+            <div class="profile-name">Phạm Lê Phúc Hưng</div>
+          </div>
+        </div>
+
+        <div class="highlight-section">
+          <div class="text-center">
+            <div class="highlight-circle">+</div>
+            <div class="highlight-label">New</div>
+          </div>
+        </div>
+
+        <div class="tab-section">
+          <div><i class="fa fa-table-cells"></i> POSTS</div>
+          <div><i class="fa fa-bookmark"></i> SAVED</div>
+          <div><i class="fa fa-id-badge"></i> TAGGED</div>
+        </div>
+
+        <div class="postcard-in-profile">
+          <img src="image/content/mookie betts.jpg" alt="Mookie Betts" />
+          <div class="reaction-bar">
+            <div class="left-icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+            <div class="right-icon">
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+          </div>
+          <div class="like-count">109,684 likes</div>
+          <div class="info">Mookie Betts</div>
+        </div>
+      </div>
+
+      <!-- Right: Scrollable Friends -->
+      <div class="col-lg-4">
+        <div class="card h-100 overflow-auto" style="max-height: calc(100vh - 150px);">
+          <div class="card-body">
+            <h5 class="card-title">Friends</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 1
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 2
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 3
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 4
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 5
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 6
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 7
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 8
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 9
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 10
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 11
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 12
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 13
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 14
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 15
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 16
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 17
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 18
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 19
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 20
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 21
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 22
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 23
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 24
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 25
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 26
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 27
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 28
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 29
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 30
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 31
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 32
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 33
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 34
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 35
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 36
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 37
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 38
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 39
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 40
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 41
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 42
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 43
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 44
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 45
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 46
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 47
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_3.png" class="rounded-circle" width="40" height="40" /> Friend 48
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_1.png" class="rounded-circle" width="40" height="40" /> Friend 49
+              </li>
+              <li class="list-group-item d-flex align-items-center gap-2">
+                <img src="image/content/person_2.png" class="rounded-circle" width="40" height="40" /> Friend 50
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Footer -->
+  <footer class="sticky-footer">
+    <p>Contact | Terms | Portfolio by Phúc Hưng</p>
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="#" class="text-primary"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-primary"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-primary"><i class="fab fa-github fa-lg"></i></a>
+    </div>
+    <p class="footer-copyright">© 2025 Phúc Hưng</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

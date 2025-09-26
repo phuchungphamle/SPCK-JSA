@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BVInStagram - Chat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column">
+        <div class="logo"><img src="image/logo/logo.png" alt=""></div>
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-compass"></i><span>Explore</span></a>
+        <a href="chat.html" class="nav-link"><i class="fa-solid fa-message"></i><span>Messages</span></a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+        <a href="#" class="nav-link create-link">
+            <i class="fa-solid fa-square-plus"></i><span>Create</span>
+            <div class="popup-modal">
+                <div class="popup-content">
+                    <h2>Create new post</h2>
+                    <div class="upload-box">
+                        📷🎥<br>Drag photos and videos here
+                    </div>
+                    <button class="btn-select">Select from computer</button>
+                </div>
+            </div>
+        </a>
+        <a href="profile.html" class="nav-link"><i class="fa-solid fa-id-card"></i><span>Profile</span></a>
+        <a href="#" class="nav-link mt-auto"><i class="fa-solid fa-bars"></i><span>More</span></a>
+    </div>
+    <div class="chat-container">
+        <!-- Danh sách bạn bè bên trái -->
+        <aside class="friend-list">
+            <div class="friend">
+                <img src="https://i.pravatar.cc/50?img=1" alt="Avatar">
+                <div class="info">
+                    <span class="name">Steven</span>
+                    <span class="status online"><i class="fas fa-circle"></i> Online</span>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="https://i.pravatar.cc/50?img=2" alt="Avatar">
+                <div class="info">
+                    <span class="name">Alex</span>
+                    <span class="status offline"><i class="fas fa-circle"></i> Offline</span>
+                </div>
+            </div>
+            <!-- Thêm nhiều bạn bè nếu muốn -->
+        </aside>
+
+        <!-- Khung chat bên phải -->
+        <main class="chat-box">
+            <!-- Header chat -->
+            <div class="chat-header">
+                <span class="chat-name">Alex</span>
+                <div class="chat-actions">
+                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-video"></i>
+                </div>
+            </div>
+
+            <!-- Nội dung tin nhắn -->
+            <div class="chat-messages">
+                <div class="message message-left">Hey, how are you?</div>
+                <div class="message message-right">I'm good! You?</div>
+                <div class="message message-left">Wanna play baseball?</div>
+                <div class="message message-right">Always 💪</div>
+            </div>
+
+            <!-- Khung nhập tin -->
+            <div class="chat-input">
+                <input type="text" placeholder="Type a message..." />
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
